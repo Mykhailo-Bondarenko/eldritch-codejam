@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-image: url("./assets/home.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.ancients {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px 0px 0px;
+}
+.ancients__image {
+  width: 90%;
+  height: 400px;
+  margin: 0px 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.game {
+  display: flex;
+  padding: 29px;
+}
+.levels {
+  display: flex;
+  flex-direction: column;
+}
+.cards {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.level {
+  background-color: inherit;
+  font-size: 18px;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  color: #fff;
+  margin: 20px 0px 0px 50px;
+  cursor: pointer;
+  border: 1.5px solid #fff;
+}
+
+.active {
+  color: red;
+  border: 0px;
+  box-shadow: inset 1px 1px 5px 5px red;
+}
+.active__img {
+  box-shadow: 1px 1px 5px 5px red;
+}
+.cards__deck {
+  background-color: inherit;
+  height: 50px;
+  width: 200px;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin: 160px 0px 0px 0px;
+}
+.cards__deck:hover {
+  box-shadow: 0px 0px 5px 5px red;
+  transition: all 0.3s ease 0s;
+}
+
+.cards__stages {
+  margin: 20px 0px 0px 50px;
+}
+.stage1,
+.stage2 {
+  margin: 0px 0px 40px 0px;
+}
+.stage__text {
+  font-size: 20px;
+}
+.stage__body {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.stage__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 2px 0px 0px 0px;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.blue {
+  background-color: blue;
+}
+.cards__image {
+  background-image: url(./assets/mythicCardBackground.png);
+  margin: 50px 0px 0px 0px;
+  height: 250px;
+  width: 160px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cards__image:hover {
+  transition: all 0.3s ease 0s;
+  box-shadow: 1px 1px 5px 5px red;
+}
+
+.cards__card {
+  margin: 50px 0px 0px 0px;
+  width: 200px;
+  height: 250px;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1200px) {
+  .ancients {
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+  }
+  .ancients__image {
+    width: 85%;
+    height: 300px;
+  }
+
+  .level {
+    margin: 20px 0px 0px 20px;
+  }
+  .cards__stages {
+    margin: 20px 0px 0px 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .game {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .levels {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .level {
+    margin: 0;
+    width: 140px;
+  }
+  .cards {
+    justify-content: space-between;
+  }
+  .cards__stages {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .ancients {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .ancients__image {
+    width: 95%;
+    height: 300px;
+    margin: 10px 0px 0px 0px;
+  }
+  .levels {
+    flex-wrap: wrap;
+  }
+  .level {
+    margin: 10px 5px 0px 5px;
+  }
+  .cards {
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 0px;
+  }
+  .cards__deck {
+    margin: 10px;
+    text-align: center;
+  }
+  .cards__stages {
+    margin: 0px;
+  }
+  .stage1,
+  .stage2 {
+    margin: 0px 0px 0px 0px;
+  }
+  .cards__image {
+    margin: 10px;
+  }
+  .cards__card {
+    margin: 10px 0px 0px 0px;
+  }
+}
